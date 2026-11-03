@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARATHMOLA SAAJ | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"><img class="brand-logo" src="mmsaaj_logo.png" alt="Logo"></span>
+      <span>MARATHMOLA SAAJ<small>HANDMADE MAHARASHTRIAN JEWELLERY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html">Our Story</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active" href="contact.html">Contact</a>
+      <button class="theme-toggle" id="themeToggle" type="button">☾ Dark mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <p class="eyebrow">REACH OUT</p>
+      <h1>Contact <em>Us</em></h1>
+      <p>Connect with us directly via WhatsApp or fill out the enquiry form below.</p>
+    </div>
+
+    <section class="section-pad contact-layout">
+      <div class="contact-copy">
+        <p class="eyebrow">CONNECT</p>
+        <h2>Let's <em>talk</em></h2>
+        <div class="contact-detail">
+          <span>💬</span>
+          <div>
+            <strong>WhatsApp Us Direct</strong>
+            <p>+91 74985 87628</p>
+            <a href="https://wa.me/917498587628" target="_blank" class="wa-link">Chat on WhatsApp ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="enquiry-form">
+        <h2>Send an <em>Enquiry</em></h2>
+        <form id="enquiryForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-field"><label>Full Name *</label><input type="text" id="fname" required placeholder="Your Name"></div>
+            <div class="form-field"><label>Phone Number *</label><input type="tel" id="fphone" required placeholder="WhatsApp Number"></div>
+          </div>
+          <div class="form-field"><label>Item of Interest</label>
+            <select id="fitem">
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Ashtapailu Saaj">Ashtapailu Saaj</option>
+              <option value="Custom Order">Custom Jewellery Request</option>
+            </select>
+          </div>
+          <div class="form-field"><label>Message</label><textarea id="fmsg" rows="4" placeholder="Your message..."></textarea></div>
+          <button type="submit" class="button button-gold" style="width:100%;">Send Enquiry ↗</button>
+          <div id="formStatus" class="form-status">Thank you! Redirecting to WhatsApp...</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> MARATHMOLA SAAJ</span>
+      <span>WhatsApp: <a href="https://wa.me/917498587628" target="_blank" class="wa-link">7498587628 ↗</a></span>
+    </div>
+  </footer>
+</body>
+</html>

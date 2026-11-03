@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marathmola Saaj Gallery & Reels Showcase">
+  <title>MARATHMOLA SAAJ | Gallery & Reels</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"><img class="brand-logo" src="mmsaaj_logo.png" alt="Logo"></span>
+      <span>MARATHMOLA SAAJ<small>HANDMADE MAHARASHTRIAN JEWELLERY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html">Our Story</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle" id="themeToggle" type="button">☾ Dark mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <p class="eyebrow">VISUAL CATALOG & REELS</p>
+      <h1>Gallery & <em>Reelstar Showcase</em></h1>
+      <p>Explore photos of our handcrafted collection and videos of creators wearing Marathmola Saaj.</p>
+    </div>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section class="section-pad">
+      <h2 style="margin-bottom: 25px;">Photo <em>Highlights</em></h2>
+      
+      <div class="gallery-grid">
+        <!-- Photo 1 (Tall Feature) -->
+        <button class="gallery-item tall" onclick="openLightbox('photo1.jpg', 'Ashtapailu Saaj — Royal Heritage')">
+          <img src="photo1.jpg" alt="Ashtapailu Saaj">
+          <span>Royal Heritage</span>
+        </button>
+
+        <!-- Photo 2 (Standard Card) -->
+        <button class="gallery-item" onclick="openLightbox('photo2.jpg', 'Traditional Maharashtrian Craftsmanship')">
+          <img src="photo2.jpg" alt="Craftsmanship Detail">
+          <span>Artisan Craft</span>
+        </button>
+
+        <!-- Photo 3 (Standard Card) -->
+        <button class="gallery-item" onclick="openLightbox('collection1.jpg', 'Ashtapailu Saaj Necklace Collection')">
+          <img src="collection1.jpg" alt="Ashtapailu Saaj">
+          <span>Ashtapailu Saaj</span>
+        </button>
+
+        <!-- Photo 4 (Wide Card) -->
+        <button class="gallery-item wide" onclick="openLightbox('collection3.jpeg', 'Handmade Bangles Collection')">
+          <img src="collection3.jpeg" alt="Ashtapailu Bangles">
+          <span>Traditional Bangles</span>
+        </button>
+
+        <!-- Photo 5 (Standard Card) -->
+        <button class="gallery-item" onclick="openLightbox('collection4.jpeg', 'AD Stone Nath Detail')">
+          <img src="collection4.jpeg" alt="AD Stone Nath">
+          <span>AD Stone Nath</span>
+        </button>
+
+        <!-- Photo 6 (Standard Card) -->
+        <button class="gallery-item" onclick="openLightbox('collection5.jpeg', 'Fish Earcuffs Collection')">
+          <img src="collection5.jpeg" alt="Fish Earcuffs">
+          <span>Fish Earcuffs</span>
+        </button>
+      </div>
+    </section>
+     
+    <!-- REELSTAR / VIDEO SHOWCASE SECTION -->
+    <section class="section-pad" style="background: var(--paper-2);">
+      <div>
+        <p class="eyebrow">REELSTAR HIGHLIGHTS</p>
+        <h2>Worn with <em>Grace</em></h2>
+        <p>Watch creators and reelstars styling authentic Maharashtrian saaj.</p>
+      </div>
+
+      <div class="video-showcase-grid">
+        
+        <!-- Video 1: Sanika -->
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls preload="auto" muted playsinline>
+              <source src="sanika.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div class="video-caption">
+            <h4>Traditional Saaj Styling</h4>
+            <p>Featured on Reelstar / Sanika Bhoite</p>
+          </div>
+        </article>
+
+        <!-- Video 2: Akshu -->
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls preload="auto" muted playsinline>
+              <source src="akshu.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div class="video-caption">
+            <h4>Traditional Saaj Styling</h4>
+            <p>Featured on Reelstar / Akshu Walhekar</p>
+          </div>
+        </article>
+
+        <!-- Video 3: Stargirl -->
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls preload="auto" muted playsinline>
+              <source src="stargirl.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div class="video-caption">
+            <h4>Traditional Saaj Styling</h4>
+            <p>Featured on Reelstar / Stargirl</p>
+          </div>
+        </article>
+
+        <!-- Video 4: Shivani -->
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls preload="auto" muted playsinline>
+              <source src="shivani.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div class="video-caption">
+            <h4>Traditional Saaj Styling</h4>
+            <p>Featured on Reelstar / Shivani</p>
+          </div>
+        </article>
+
+        <!-- Video 5: Komal -->
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls preload="auto" muted playsinline>
+              <source src="komal.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div class="video-caption">
+            <h4>Traditional Saaj Styling</h4>
+            <p>Featured on Reelstar / Komal Deshmukh</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" hidden onclick="closeLightbox()">
+    <button class="lightbox-close">&times;</button>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="Zoom view">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> MARATHMOLA SAAJ</span>
+      <span>WhatsApp: <a href="https://wa.me/917498587628" target="_blank" class="wa-link">7498587628 ↗</a></span>
+    </div>
+  </footer>
+</body>
+</html>

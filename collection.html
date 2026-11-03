@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Marathmola Saaj's full collection of handcrafted Maharashtrian jewellery.">
+  <title>MARATHMOLA SAAJ | Collection</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"><img class="brand-logo" src="mmsaaj_logo.png" alt="Logo"></span>
+      <span>MARATHMOLA SAAJ<small>HANDMADE MAHARASHTRIAN JEWELLERY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a class="active" href="collection.html">Collection</a>
+      <a href="about.html">Our Story</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle" id="themeToggle" type="button">☾ Dark mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <p class="eyebrow">OUR CATALOG</p>
+      <h1>Handcrafted <em>Collection</em></h1>
+      <p>Explore our wide selection of traditional Maharashtrian jewellery.</p>
+    </div>
+
+    <section class="section-pad">
+      <!-- Toolbar: Filters and Search -->
+      <div class="catalog-toolbar">
+        <div class="filter-group">
+          <button class="filter-btn active" onclick="filterCatalog('all', this)">All Items</button>
+          <button class="filter-btn" onclick="filterCatalog('saaj', this)">Saaj & Necklaces</button>
+          <button class="filter-btn" onclick="filterCatalog('bangles', this)">Bangles</button>
+          <button class="filter-btn" onclick="filterCatalog('earrings', this)">Earrings</button>
+        </div>
+        <input type="text" id="searchInput" class="search-field" placeholder="Search collection..." onkeyup="searchCatalog()">
+      </div>
+
+      <div class="product-grid" id="catalogGrid">
+        
+        <!-- Item 1 -->
+        <article class="product-card" data-category="saaj">
+          <div class="product-photo" onclick="openProductModal('Ashtapailu Saaj', 'A tribute to Maharashtra\'s rich heritage.', '₹ 999', 'collection1.jpg')">
+            <img src="collection1.jpg" alt="Ashtapailu Saaj">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Saaj</p>
+            <h3>Ashtapailu Saaj</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 999</span>
+              <button class="quick-view-btn" onclick="openProductModal('Ashtapailu Saaj', 'A tribute to Maharashtra\'s rich heritage.', '₹ 999', 'collection1.jpg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="product-card" data-category="bangles">
+          <div class="product-photo" onclick="openProductModal('Ashtapailu Saaj', 'A tribute to Maharashtra\'s rich heritage.', '₹ 399', 'collection3.jpeg')">
+            <img src="collection3.jpeg" alt="Ashtapailu Saaj">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Bangles</p>
+            <h3>Ashtapailu Saaj</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 399</span>
+              <button class="quick-view-btn" onclick="openProductModal('Ashtapailu Saaj', 'A tribute to Maharashtra\'s rich heritage.', '₹ 399', 'collection3.jpeg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="product-card" data-category="nath">
+          <div class="product-photo" onclick="openProductModal('AD Stone Nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 459', 'collection4.jpeg')">
+            <img src="collection4.jpeg" alt="AD Stone Nath">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Nath</p>
+            <h3>AD Stone Nath</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 459</span>
+              <button class="quick-view-btn" onclick="openProductModal('AD Stone Nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 459', 'collection4.jpeg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="product-card" data-category="earrings">
+          <div class="product-photo" onclick="openProductModal('Fish Earcuffs', 'A tribute to Maharashtra\'s rich heritage.', '₹ 299', 'collection5.jpeg')">
+            <img src="collection5.jpeg" alt="Fish Earcuffs">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Earcuffs</p>
+            <h3>Fish Earcuffs</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 299</span>
+              <button class="quick-view-btn" onclick="openProductModal('Fish Earcuffs', 'A tribute to Maharashtra\'s rich heritage.', '₹ 299', 'collection5.jpeg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 5 -->
+        <article class="product-card" data-category="nath">
+          <div class="product-photo" onclick="openProductModal('AD Stone Nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 450', 'collection6.jpg')">
+            <img src="collection6.jpg" alt="AD Stone Nath">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Nath</p>
+            <h3>AD Stone Nath</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 450</span>
+              <button class="quick-view-btn" onclick="openProductModal('AD Stone Nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 450', 'collection6.jpg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 6 -->
+        <article class="product-card" data-category="saaj">
+          <div class="product-photo" onclick="openProductModal('Invisible necklace', 'A tribute to Maharashtra\'s rich heritage.', '₹ 150', 'collection7.jpg')">
+            <img src="collection7.jpg" alt="Invisible necklace">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Saaj</p>
+            <h3>Invisible necklace</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 150</span>
+              <button class="quick-view-btn" onclick="openProductModal('Invisible necklace', 'A tribute to Maharashtra\'s rich heritage.', '₹ 150', 'collection7.jpg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 7 -->
+        <article class="product-card" data-category="nath">
+          <div class="product-photo" onclick="openProductModal('Traditional Nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 399', 'collection8.jpg')">
+            <img src="collection8.jpg" alt="Nath">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Nath</p>
+            <h3>Traditional Nath</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 399</span>
+              <button class="quick-view-btn" onclick="openProductModal('Traditional Nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 399', 'collection8.jpg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 8 -->
+        <article class="product-card" data-category="saaj">
+          <div class="product-photo" onclick="openProductModal('Ashtapailu necklace', 'A tribute to Maharashtra\'s rich heritage.', '₹ 349', 'collection9.jpg')">
+            <img src="collection9.jpg" alt="Ashtapailu necklace">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Saaj</p>
+            <h3>Ashtapailu necklace</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 349</span>
+              <button class="quick-view-btn" onclick="openProductModal('Ashtapailu necklace', 'A tribute to Maharashtra\'s rich heritage.', '₹ 349', 'collection9.jpg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 9 -->
+        <article class="product-card" data-category="saaj">
+          <div class="product-photo" onclick="openProductModal('Tanmani necklace', 'A tribute to Maharashtra\'s rich heritage.', '₹ 350', 'collection10.jpg')">
+            <img src="collection10.jpg" alt="Tanmani necklace">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Saaj</p>
+            <h3>Tanmani necklace</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 350</span>
+              <button class="quick-view-btn" onclick="openProductModal('Tanmani necklace', 'A tribute to Maharashtra\'s rich heritage.', '₹ 350', 'collection10.jpg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+
+           <article class="product-card" data-category="nath">
+          <div class="product-photo" onclick="openProductModal('AD Stone Nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 450', 'collection11.jpg')">
+            <img src="collection11.jpg" alt="AD Stone Nath">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Nath</p>
+            <h3>AD Stone Nath</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 450</span>
+              <button class="quick-view-btn" onclick="openProductModal('AD Stone Nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 450', 'collection11.jpg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+
+           <article class="product-card" data-category="bangles">
+          <div class="product-photo" onclick="openProductModal('Chandrakor Bangles', 'A tribute to Maharashtra\'s rich heritage.', '₹ 499', 'collection12.jpg')">
+            <img src="collection12.jpg" alt="Chandrakor Bangles">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Bangles</p>
+            <h3>Chandrakor Bangles</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 499</span>
+              <button class="quick-view-btn" onclick="openProductModal('Chandrakor Bangles', 'A tribute to Maharashtra\'s rich heritage.', '₹ 499', 'collection12.jpg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+
+         <article class="product-card" data-category="nath">
+          <div class="product-photo" onclick="openProductModal('Maharashtrian nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 499', 'collection13.jpg')">
+            <img src="collection13.jpg" alt="Maharashtrian nath">
+          </div>
+          <div class="product-info">
+            <p class="product-category">Maharashtrian Nath</p>
+            <h3>Maharashtrian nath</h3>
+            <p>A tribute to Maharashtra's rich heritage.</p>
+            <div class="product-meta">
+              <span class="product-price">₹ 499</span>
+              <button class="quick-view-btn" onclick="openProductModal('Maharashtrian nath', 'A tribute to Maharashtra\'s rich heritage.', '₹ 499', 'collection13.jpg')">Quick View</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Lightbox -->
+  <div id="lightbox" class="lightbox" hidden onclick="closeLightbox()">
+    <button class="lightbox-close">&times;</button>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="Zoom view">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> MARATHMOLA SAAJ</span>
+      <span>Contact WhatsApp: <a href="https://wa.me/917498587628" target="_blank" class="wa-link">7498587628 ↗</a></span>
+    </div>
+  </footer>
+</body>
+</html>
