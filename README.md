@@ -1,38 +1,77 @@
-# MARATHMOLA SAAJ — Editable Website Boilerplate
+# MARATHMOLA SAAJ – Handmade Maharashtrian Jewellery
 
-This is a starter template, not a finished shop. Replace the placeholder copy and image paths with your own brand information.
+**MARATHMOLA SAAJ** is a multi-page website created for a handmade Maharashtrian jewellery brand. The website showcases traditional jewellery collections through an elegant and user-friendly design that reflects the beauty of Maharashtrian culture and craftsmanship.
 
-## Folder structure
-- `index.html` — homepage and featured products
-- `collection.html` — reusable product card grid
-- `gallery.html` — photo gallery and optional video
-- `contact.html` — your business information and enquiry form
-- `css/style.css` — shared design, responsive layouts and theme colours
-- `js/script.js` — mobile navigation, dark/light mode, lightbox and demo form
-- `images/products/` — save product photos here
-- `images/gallery/` — save gallery photos here
+## About the Website
 
-## How to add your own jewellery photos
-1. Copy a photo into `images/products/`, for example `thushi-necklace.jpg`.
-2. In `index.html` or `collection.html`, change the image path, e.g.:
-   `<img src="images/products/thushi-necklace.jpg" alt="Gold-tone Thushi necklace">`
-3. Change the `alt` text to describe the actual photo.
-4. Change the product name, description, category and price in the same card.
-5. For gallery photos, put them in `images/gallery/` and update the matching image path in `gallery.html`.
+The website provides visitors with an opportunity to explore jewellery collections, view product photographs, discover different designs and connect with the brand for enquiries and orders.
 
-Use JPG, PNG or WebP images. Keep file names simple (lowercase, no spaces), and use reasonably compressed images for faster loading.
+Designed with a blend of traditional aesthetics and modern web design, the website offers a visually appealing browsing experience across different devices.
 
-## Add more products
-Copy one complete `<article class="product-card"> ... </article>` block in `collection.html`, then edit its photo, alt text, title, category, description and price.
+## Website Pages
 
-## Add more gallery images
-Copy a `<button class="gallery-item" ...> ... </button>` block in `gallery.html`, change the image path and alt text, and update its caption. Keep the `.lightbox` block near the end of the page so the image can open large.
+- **Home (`index.html`)** – Introduces the brand and highlights featured jewellery collections.
+- **Collections (`collection.html`)** – Displays jewellery products with their images, descriptions and prices.
+- **Gallery (`gallery.html`)** – Showcases jewellery photographs and visual highlights.
+- **Contact (`contact.html`)** – Provides business information and an enquiry form.
 
-## Update your business information
-Search for placeholders such as `YOUR TAGLINE`, `YOUR-EMAIL@example.com`, `YOUR PHONE NUMBER`, `@YOUR-INSTAGRAM-HANDLE`, and `YOUR CITY / BUSINESS ADDRESS` and replace them with your chosen information. Do not publish personal details unless you want them public.
+## Technologies Used
 
-## Important
-- The form is only a front-end demo. It displays a confirmation message but does not email or save submissions. Connect a form service or backend to receive real enquiries.
-- The map iframe starts blank. Replace it with the embed URL from your map provider, or remove the map section.
-- The optional video path is a placeholder. Add your own MP4 in a `media/` folder or remove the video section.
-- Images and fonts are local placeholders / external Google Fonts. The site layout and functionality are best checked in a browser, preferably using VS Code Live Server.
+- HTML5 – Website structure and content.
+- CSS3 – Styling, layouts, responsive design and theme customization.
+- JavaScript – Interactive features and website functionality.
+
+## Key Features
+
+- Elegant design inspired by Maharashtrian culture.
+- Multi-page website navigation.
+- Responsive layouts for different screen sizes.
+- Jewellery product display and collection sections.
+- Image gallery with lightbox functionality.
+- Dark and light theme options.
+- Mobile-friendly navigation.
+- Contact and enquiry form interface.
+
+## Project Structure
+
+```text
+MARATHMOLA-SAAJ/
+│
+├── index.html
+├── collection.html
+├── gallery.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/
+│   ├── products/
+│   └── gallery/
+│
+└── README.md
+```
+
+## Customization
+
+The website includes dedicated sections for jewellery photographs, product information, brand details and business contact information. Product images and content can be updated to showcase new jewellery designs and collections.
+
+## Future Enhancements
+
+- Online ordering and shopping functionality.
+- Payment gateway integration.
+- Backend integration for customer enquiries.
+- Product search and category filters.
+- Improved customer experience and additional features.
+
+## Live Website
+
+[Visit MARATHMOLA SAAJ](https://marathmolasaaj.vercel.app/)
+
+---
+
+**MARATHMOLA SAAJ**  
+*Tradition • Elegance • Handmade with Love*
